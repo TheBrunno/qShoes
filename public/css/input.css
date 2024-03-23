@@ -1,0 +1,168 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 85vh;
+}
+main > section{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form label, form input{
+    display: block;
+}
+.form-container{
+    width: 400px;
+    height: 528px;
+}
+.form-container h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+.form-container h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+a{
+    color: #8234E9;
+    text-decoration: none;
+}
+input[type="email"], input[type="password"],input[type="text"]{
+    padding: 16px;
+    background-color: #F7FAFC;
+    border: 1px solid #E8E8E8;
+    outline: none;
+    width: 100%;
+    font-size: 17px;
+}
+input[type="email"]::placeholder, input[type="password"]::placeholder, input[type="text"]::placeholder{
+    color: #656769;
+}
+label:not(label[for="lembrar"]){
+    margin-bottom: 12px;
+}
+form{
+    margin-top: 40px;
+}
+.form-register{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.checkbox-lembrar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.addicional{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 64px;
+    position: relative;
+}
+.buttons-register{
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+    position: relative;
+}
+input[type="button"]{
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    height: 52px;
+    cursor: pointer;
+    transition: .5s;
+}
+input[type="button"]:hover{
+    box-shadow: 0 0 5px 3px #1a202c38;
+}
+.entrar{
+    background-color: #8234E9;
+}
+.entrar-google{
+    background-color: #1A202C;
+}
+.form-container p{
+    text-align: center;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 14px;
+    left: 54px;
+}
+.buttons-register .icon{
+    left: 46px;
+
+}
+.left{
+    position: relative;
+}
+.left > img{
+    width: 95%;
+    margin-top: -130px;
+    margin-left: 80px;
+    rotate: 45deg;
+    max-width: 700px;
+    position: absolute;
+    top: 35%;
+    right: -15%;
+    filter: drop-shadow(5px 5px 15px #ffffff85);
+    user-select: none;
+}
+.shape1{
+    width: 424px;
+    height: 424px;
+    border-radius: 58% 42% 78% 22% / 35% 42% 58% 65%;
+    background-image: linear-gradient(to right bottom, #8234E9, #2a114b);
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    right: 0;
+}
+
+.shape2{
+    width: 100px;
+    height: 100px;
+    border-radius: 58% 42% 78% 22% / 35% 42% 58% 65%;
+    background-image: linear-gradient(to right bottom, #0a0a0a, #2c2c2c);
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    right: 5%;
+}
+
+.shape3{
+    width: 150px;
+    height: 150px;
+    border-radius: 58% 42% 78% 22% / 35% 42% 58% 65%;
+    background-image: linear-gradient(to right bottom, #0a0a0a, #2c2c2c);
+    position: absolute;
+    z-index: -1;
+    top: 550px;
+    right: 330px;
+    rotate: 180deg;
+}
+.container-register{
+    margin-top: -100px;
+}
