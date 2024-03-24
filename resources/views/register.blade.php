@@ -12,7 +12,8 @@
             <h2>Seja bem-vindo</h2>
             <h1>Crie a sua conta</h1>
 
-            <form action="POST">
+            <form method="POST" action="/register" id="form-register">
+                @csrf
                 <div class="form-register">
                     <div class="name-field">
                         <label for="name">Nome</label>
@@ -24,7 +25,7 @@
                     </div>
                     <div class="password-field">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="0123456789" id="senha">
+                        <input type="password" name="password" placeholder="0123456789" id="senha">
                     </div>
                     <div class="password-field">
                         <label for="repetir">Repetir senha</label>
@@ -32,7 +33,7 @@
                     </div>
                 </div>
                 <div class="buttons-register">
-                    <input type="button" value="Criar a conta" class="entrar">
+                    <input type="submit" value="Criar a conta" class="entrar" id="submit">
                     <img src="images/google-icon.png" class="icon">
                     <input type="button" value="Ou se cadastre com o Google" class="entrar-google">
                 </div>
@@ -42,4 +43,6 @@
         </div>
     </section>
 </main>
+<script src="js/fieldsVerify.js"></script>
+<script src="js/passwordVerify.js"></script>
 @endsection

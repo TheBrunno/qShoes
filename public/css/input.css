@@ -81,7 +81,7 @@ form{
     margin-bottom: 32px;
     position: relative;
 }
-input[type="button"]{
+input[type="button"], input[type="submit"]{
     width: 100%;
     color: #fff;
     font-size: 18px;
@@ -92,7 +92,7 @@ input[type="button"]{
     cursor: pointer;
     transition: .5s;
 }
-input[type="button"]:hover{
+input[type="button"]:hover, input[type="submit"]:hover{
     box-shadow: 0 0 5px 3px #1a202c38;
 }
 .entrar{
@@ -165,4 +165,21 @@ input[type="button"]:hover{
 }
 .container-register{
     margin-top: -100px;
+}
+
+.wrong-field{
+    font-size: 14px;
+    color: #f00;
+    text-align: left;
+    position: absolute;
+    bottom: -17px;
+    left: 5px;
+}
+
+.form-register > div{
+    position: relative;
+}
+
+.errorInput{
+    border: 1px solid #f00 !important;
 }
