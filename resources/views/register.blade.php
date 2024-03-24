@@ -44,5 +44,4 @@
     </section>
 </main>
 <script src="js/fieldsVerify.js"></script>
-<script src="js/passwordVerify.js"></script>
 @endsection
