@@ -25,3 +25,18 @@ Route::post('/register', function(Request $request){
     ]);
     echo " Cadastrado com sucessso";
 });
+
+Route::post('/login', function(Request $request){
+    $user = Cadastro::where('email', $request->email)->first();
+
+    if($user){
+        if($request->password == $user->password) {
+            echo "Login bem-sucedido";
+        } else {
+            echo "Senha incorreta";
+        }
+    }else{
+        echo "Usuário não existe";
+    }
+
+});

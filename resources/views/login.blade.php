@@ -12,7 +12,8 @@
             <h2>Bem-vindo de volta</h2>
             <h1>Faça login na sua conta</h1>
 
-            <form action="POST">
+            <form method="POST" action="/login">
+                @csrf
                 <div class="form-login">
                     <div class="email-field">
                         <label for="email">E-mail</label>
@@ -20,7 +21,7 @@
                     </div>
                     <div class="password-field">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="0123456789" id="senha">
+                        <input type="password" name="password" placeholder="0123456789" id="senha">
                     </div>
                     <div class="addicional">
                         <div class="checkbox-lembrar">
@@ -33,7 +34,7 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <input type="button" value="Entrar na conta" class="entrar">
+                    <input type="submit" value="Entrar na conta" class="entrar">
                     <img src="images/google-icon.png" class="icon">
                     <input type="button" value="Ou faça login com o Google" class="entrar-google">
                 </div>
