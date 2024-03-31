@@ -29,14 +29,10 @@ Route::post('/register', function(Request $request){
 Route::post('/login', function(Request $request){
     $user = Cadastro::where('email', $request->email)->first();
 
-    if($user){
-        if($request->password == $user->password) {
-            echo "Login bem-sucedido";
-        } else {
-            echo "Senha incorreta";
-        }
+    if($user && $request->password == $user->password){
+        echo "Login bem-sucedido";
     }else{
-        echo "Usuário não existe";
+        echo "Usuario ou senha não foram colocados corretamente";
     }
 
 });
