@@ -126,7 +126,7 @@ input[type="button"]:hover, input[type="submit"]:hover{
     max-width: 700px;
     position: absolute;
     top: 35%;
-    right: -15%;
+    right: 0;
     filter: drop-shadow(5px 5px 15px #ffffff85);
     user-select: none;
 }
@@ -138,7 +138,7 @@ input[type="button"]:hover, input[type="submit"]:hover{
     position: absolute;
     z-index: -1;
     top: 25%;
-    right: 0;
+    right: 70px;
 }
 
 .shape2{
@@ -149,7 +149,7 @@ input[type="button"]:hover, input[type="submit"]:hover{
     position: absolute;
     z-index: -1;
     top: 20%;
-    right: 5%;
+    right: 60px;
 }
 
 .shape3{
@@ -160,7 +160,7 @@ input[type="button"]:hover, input[type="submit"]:hover{
     position: absolute;
     z-index: -1;
     top: 550px;
-    right: 330px;
+    right: 390px;
     rotate: 180deg;
 }
 .container-register{
@@ -183,3 +183,9 @@ input[type="button"]:hover, input[type="submit"]:hover{
 .errorInput{
     border: 1px solid #f00 !important;
 }
+
+@media (max-width: 1300px) {
+    .left {
+      display: none;
+    }
+  }
