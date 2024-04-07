@@ -1,6 +1,6 @@
 @extends('templates.nav')
 @section('content')
-<main>
+<div class="input-main">
     <section class="left">
         <img src="images/login-tenis.png">
         <div class="shape1"></div>
@@ -43,5 +43,5 @@
             <p>Não tem uma conta? <a href="/register">Cadastre-se</a></p>
         </div>
     </section>
-</main>
+</div>
 @endsection

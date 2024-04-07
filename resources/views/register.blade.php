@@ -1,6 +1,6 @@
 @extends('templates.nav')
 @section('content')
-<main>
+<div class="input-main">
     <section class="left">
         <img src="images/login-tenis2.png">
         <div class="shape1"></div>
@@ -42,6 +42,6 @@
             <p>Já tem uma conta? <a href="/login">Entre</a></p>
         </div>
     </section>
-</main>
+</div>
 <script src="js/fieldsVerify.js"></script>
 @endsection
