@@ -6,3 +6,6 @@
     color: #1A202C;
     font-size: 17px;
 }
+html{
+    overflow-x: hidden;
+}

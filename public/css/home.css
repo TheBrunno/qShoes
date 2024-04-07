@@ -1,3 +1,92 @@
-main .photo > img{
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    justify-content: initial;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    height: auto;
+}
+.photo{
     width: 100vw;
+    max-width: 2000px;
+    margin: 0 auto;
+    display: block;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ofertas{
+    width: 100%;
+    background-color: #F66C28;
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+.ofertas p{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.ofertas p span{
+    color: #fff;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 40px;
+}
+.card{
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.103);
+    padding: 12px;
+    border-radius: 5px;
+}
+.card img{
+    width: 280px;
+}
+.name-product{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    width: 230px;
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.old-price{
+    color: #969696;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.price{
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+.installments{
+    font-size: 14px;
+}
+.text-price{
+    font-size: 16px;
+}
+main section{
+    display: block;
+    margin: 0 auto;
+}
+.marcas{
+    display: flex;
+    gap: 10px;
+}
+.topic-title{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+h2{
+    margin: 30px 0;
 }
